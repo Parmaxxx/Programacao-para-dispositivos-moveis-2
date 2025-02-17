@@ -4,6 +4,7 @@ import Exemplo3 from "./Components/Exemplo3";
 import ViewBoxesWithColorAndText from "./Components/viewBoxeswithColorAndText";
 import TesteTexto from "./Components/TesteTexto";
 import DisplayAnImage from "./Components/TesteImage";
+import ExemploTexto from "./Components/ExemploTexto";
 const NomedoSeuApp = () => {
   return (
     <View
@@ -18,6 +19,7 @@ const NomedoSeuApp = () => {
       <ViewBoxesWithColorAndText />
       <TesteTexto />
       <DisplayAnImage />
+      <ExemploTexto />
     </View>
   );
 };
