@@ -1,27 +1,34 @@
 import React from "react";
-import { Text, View } from "react-native";
-import Exemplo3 from "./Components/Exemplo3";
-import ViewBoxesWithColorAndText from "./Components/viewBoxeswithColorAndText";
-import TesteTexto from "./Components/TesteTexto";
-import DisplayAnImage from "./Components/TesteImage";
-import ExemploTexto from "./Components/ExemploTexto";
-const NomedoSeuApp = () => {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text> Bem vindo ao React Native!</Text>
-      <Exemplo3 />
-      <ViewBoxesWithColorAndText />
-      <TesteTexto />
-      <DisplayAnImage />
-      <ExemploTexto />
-    </View>
-  );
+import { Text, View, StyleSheet } from "react-native";
+
+const App = () => {
+    return (
+        <View
+            style={styles.container}
+        >
+            <Text style={styles.tittle}> Bem vindo ao React Native</Text>
+        </View>
+    );
 };
 
-export default NomedoSeuApp;
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 24,
+        backgroundColor: '#eaeaea',
+    },
+    tittle:{
+        marginTop:16,
+        paddingVertical: 8,
+        borderWidth: 4,
+        borderColor: '#20232a',
+        borderRadius: 6,
+        backgroundColor: '#61dafb',
+        color: '#20232a',
+        textAlign: "center",
+        fontSize: 30,
+        fontWeight: 'bold',
+    }
+})
+
+export default App;
