@@ -16,7 +16,7 @@ function Principal() {
             <Button
                 title="Vamos para FATEC"
                 onPress={() => navigation.navigate('FATEC')}
-                />
+            />
         </View>
     )
 }
@@ -27,8 +27,8 @@ function FATEC(){
         <View style={styles.container}>
             <Text style={styles.texto}>Sejam Bem-Vindos a FATEC</Text>
             <Button
-            title="Tela Principal"
-            onPress={() => navigation.navigate('Principal')}
+                title="Tela Principal"
+                onPress={() => navigation.navigate('Principal')}
             />
         </View>
     )
@@ -77,7 +77,7 @@ function MeuDrawer() {
             <Drawer.Screen name="Secretaria" component={Secretaria} />
             <Drawer.Screen name="Alunos" component={Alunos} />
             <Drawer.Screen name="Financeiro" component={Financeiro} />
-            </Drawer.Navigator>
+        </Drawer.Navigator>
     )
 
 }
